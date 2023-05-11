@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    box-sizing: border-box;
+}
+:root{
+    --purple: #733FC8;
+    --gray: #48556A;
+    --white: #FFFFFF; 
+    --lightBlack: #19202D; 
+    --lightGray:#CFCFCF;
+    --bg: #F2F2F2;
+}
+body{
+        height: 100vh;
+        background-color: var(--bg);
+}
+
+h2{
+    font-weight: 600;
+    font-size: 20px;
+    /* line-height: 24px; */
+    color: var(--white);
+    
+}
+h3{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--white);
+}
+h4{
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+p{
+    font-weight: 500;
+    font-size: 13px;
+    color:var(--lightGray);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+.container{
+    width: 345px;
+    margin: auto;
+}
+.quote{
+    background-image: url(./assets/“.svg);
+    background-repeat:no-repeat;
+    background-position: 90% 0%;
+}
+.item1{
+    width: 100%;
+    padding: 25px 32px 32px 32px;
+    background-color: var(--purple);
+    border-radius: 8px;
+    margin-bottom: 23px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+
+
+}
+.container .item1 .avatar-div{
+    display:flex;
+    gap: 17px;
+}
+.container .item1 .avatar-title{
+    margin-top: 18px;
+}
+.container .item1 .avatar-desc{
+    margin-top: 40px;
+}
+
+.darkGray{
+    background-color: var(--gray);
+}
+.white{
+    background-color: var(--white);
+}
+.colorgray{
+    color:var(--gray)
+}
+.colorgrayo{
+    color: #48556A;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.lightblack{
+    background-color: var(--lightBlack);
+}
+.textwhite{
+color: var(--white);
+}
+
+
+@media screen and (min-width: 1150px) {
+
+    .container{
+        width: 1110px;
+        display: grid;
+        column-gap: 30px;
+        row-gap: 24px;
+        grid-template-columns: auto auto auto 20%;
+        
+    }
+    
+    .item1{
+        margin: 0;
+    }
+    .frst{
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+    .scnd{
+        grid-area:1 / 3 / span 1 / span 1;
+    }
+    .fvs{
+        grid-area: 1 / 4 / span 2 / span 1;
+    }
+    .thrd{
+        grid-area: 2 / 1 / span 1 / span 1; 
+    }
+    .frth{
+        grid-area: 2 / 2 / span 1 / span 2; 
+    }
+
+    body{
+        display: flex;;
+    }
+}
